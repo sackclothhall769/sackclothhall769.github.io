@@ -3,101 +3,187 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trevia Gestión</title>
+<title>Trevia Gestión | Especialistas en Extranjería</title>
 
 <style>
-body{
+*{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f8fc;
-    color:#333;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+body{
+    background:#f5f8fc;
+    color:#222;
+    line-height:1.6;
+}
+
 header{
-    background:#0d6efd;
+    background:linear-gradient(135deg,#0b5ed7,#0d6efd);
     color:white;
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px;
 }
+
 header h1{
-    margin:0;
-    font-size:42px;
+    font-size:48px;
+    margin-bottom:15px;
 }
+
 header p{
-    font-size:20px;
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
 }
-.btn{
+
+.boton{
     display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
+    margin-top:30px;
     background:white;
     color:#0d6efd;
     text-decoration:none;
-    border-radius:8px;
+    padding:15px 35px;
+    border-radius:50px;
     font-weight:bold;
+    transition:.3s;
 }
+
+.boton:hover{
+    transform:scale(1.05);
+}
+
 section{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:70px 20px;
 }
-.cards{
+
+h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:40px;
+}
+
+.grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
+
 .card{
     background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
 }
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
 footer{
     background:#0d6efd;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
 }
 </style>
 
 </head>
+
 <body>
 
 <header>
+
 <h1>Trevia Gestión</h1>
+
 <p>Especialistas en trámites de extranjería en toda España.</p>
-<a class="btn" href="mailto:treviagestion@gmail.com">Contactar</a>
+
+<a class="boton" href="mailto:treviagestion@gmail.com">Contactar</a>
+
 </header>
 
 <section>
-<h2>Nuestros servicios</h2>
 
-<div class="cards">
+<h2>Nuestros Servicios</h2>
+
+<div class="grid">
+
 <div class="card">
-<h3>Asignación de NIE</h3>
-<p>Gestionamos tu solicitud de forma rápida y sencilla.</p>
+<h3>📄 Asignación de NIE</h3>
+<p>Gestionamos tu solicitud de forma rápida y segura.</p>
 </div>
 
 <div class="card">
-<h3>Toma de Huellas (TIE)</h3>
-<p>Te ayudamos a conseguir tu cita.</p>
+<h3>🪪 Toma de Huellas</h3>
+<p>Te ayudamos a conseguir tu cita para la TIE.</p>
 </div>
 
 <div class="card">
-<h3>Autorización de Regreso</h3>
-<p>Tramitamos tu solicitud con seguimiento personalizado.</p>
+<h3>✈️ Autorización de Regreso</h3>
+<p>Preparamos y gestionamos toda la documentación necesaria.</p>
 </div>
 
 <div class="card">
-<h3>Renovaciones</h3>
-<p>Renovaciones de residencia y otros trámites.</p>
+<h3>📂 Renovaciones</h3>
+<p>Renovaciones, recursos y otros trámites de extranjería.</p>
 </div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>¿Por qué elegir Trevia Gestión?</h2>
+
+<div class="grid">
+
+<div class="card">
+✅ Atención personalizada.
+</div>
+
+<div class="card">
+✅ Gestión online.
+</div>
+
+<div class="card">
+✅ Seguimiento durante todo el proceso.
+</div>
+
+<div class="card">
+✅ Rapidez y transparencia.
+</div>
+
 </div>
 
 </section>
 
 <footer>
+
 © 2026 Trevia Gestión
+
 </footer>
+
+<a class="whatsapp" href="#">💬</a>
 
 </body>
 </html>
