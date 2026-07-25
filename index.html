@@ -149,6 +149,16 @@ nav a:hover{
     justify-content:center;
     align-items:center;
     font-size:30px;
+} 
+ .fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade.visible{
+    opacity:1;
+    transform:translateY(0);
 }
 </style>
 
@@ -186,9 +196,9 @@ nav a:hover{
 
 </header>
     
-<section>
+<section class="fade">
 
-<section id="servicios">
+<section id="servicios" class="fade">
 
 <h2>Nuestros Servicios</h2>
 
@@ -216,9 +226,9 @@ nav a:hover{
 
 </div>
 
-</section>
+</section class="fade">
 
-<section id="porque">
+<section id="porque" class="fade" >
 
 <h2>¿Por qué elegir Trevia Gestión?</h2>
 
@@ -242,15 +252,27 @@ nav a:hover{
 
 </div>
 
-</section>
+</section class="fade">
 
 <footer>
 
 © 2026 Trevia Gestión
 
 </footer>
-    
-<section>
+<script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+        }
+    });
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+    observer.observe(el);
+});
+</script>
+<section class="fade">
 
 <h2>Cómo trabajamos</h2>
 
@@ -278,8 +300,8 @@ nav a:hover{
 
 </div>
 
-</section>
-    <section>
+</section class="fade">
+    <section class="fade">
      
         <h2>Lo que dicen nuestros clientes</h2>
 
@@ -302,7 +324,7 @@ nav a:hover{
 
 </div>
 
-</section>
+    </section class="fade">
     
 <footer id="contacto">
 
@@ -341,7 +363,7 @@ nav a:hover{
 
 </div>
 
-</section>
+</section class="fade">
     
 </footer>
     
