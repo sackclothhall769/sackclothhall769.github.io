@@ -196,8 +196,6 @@ nav a:hover{
 
 </header>
     
-<section class="fade">
-
 <section id="servicios" class="fade">
 
 <h2>Nuestros Servicios</h2>
@@ -226,7 +224,7 @@ nav a:hover{
 
 </div>
 
-</section class="fade">
+</section>
 
 <section id="porque" class="fade" >
 
@@ -252,27 +250,9 @@ nav a:hover{
 
 </div>
 
-</section class="fade">
-
-<footer>
-
-© 2026 Trevia Gestión
-
-</footer>
-<script>
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("visible");
-        }
-    });
-});
-
-document.querySelectorAll(".fade").forEach(el=>{
-    observer.observe(el);
-});
-</script>
-<section class="fade">
+</section>
+    
+<section>
 
 <h2>Cómo trabajamos</h2>
 
@@ -300,7 +280,7 @@ document.querySelectorAll(".fade").forEach(el=>{
 
 </div>
 
-</section class="fade">
+</section>
     <section class="fade">
      
         <h2>Lo que dicen nuestros clientes</h2>
@@ -326,12 +306,67 @@ document.querySelectorAll(".fade").forEach(el=>{
 
     </section class="fade">
     
-<footer id="contacto">
 
-<h2>Contacto</h2>
+
+<p>© 2026 Trevia Gestión</p>
+
+</footer>
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+
+    observer.observe(el);
+
+});
+
+</script> 
 
 <p>📧 treviagestion@gmail.com</p>
 
+
+<p>© 2026 Trevia Gestión</p>
+
+</footer>
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+
+    observer.observe(el);
+
+});
+
+</script>
+    
 <p>📱 +34 631 41 81 90</p>
 
 <p style="margin-top:20px;">© 2026 Trevia Gestión</p>
@@ -363,7 +398,7 @@ document.querySelectorAll(".fade").forEach(el=>{
 
 </div>
 
-</section class="fade">
+</section>
     
 </footer>
     
